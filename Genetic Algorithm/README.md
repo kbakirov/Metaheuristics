@@ -1,5 +1,7 @@
 # Genetic Algorithm
 ## Objective is to find target string with given valid genes
+
+### Importing random library
 ```
 import random
 ```
@@ -17,10 +19,11 @@ QRSTUVWXYZ 1234567890, .-;:_!"#%&/()=?@${[]}'''
 TARGET = "My name is Bakirov Kuanysh"
 ```
 
-```class Individual(object):
-	'''
-	Class representing individual in population
-	'''
+### Class representing individual in population
+
+```
+class Individual(object):
+
 	def __init__(self, chromosome):
 		self.chromosome = chromosome
 		self.fitness = self.cal_fitness()
@@ -142,3 +145,7 @@ def main():
 if __name__ == '__main__':
 	main()
 ```
+### Result
+![Target](Target.png)
+
+### As we can see from the picture after 194 Generation our Target is found.
